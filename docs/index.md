@@ -1,5 +1,6 @@
 # Assignment 07
-* SOrellana, 05/31/2022
+###### *SOrellana, 05/31/2022*
+###### *Foundations of Programming: Python*
 
 ## Introduction
   In this assignment I have written a script, that allows user to enter grocery items and its prices. Once grocery list is complete, the user can save it into a file. Once file is saved, the program can load it back again to display. I have used pickle module to create a file with grocery items in binary format and to display its contents. The script have error handling included to catch invalid user input.
