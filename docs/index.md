@@ -64,14 +64,12 @@ if strMenuChoice == '1':  # Adding new item to grocery list
         print(e, e.__doc__, type(e), sep='\n')
 ```
 I tested the program to add ‘apple’ as item and ‘ten’ as its price and received a message showing to use numbers for price, as it recognized error as ValueError type, and it proceeds to display menu options. Figure 01 shows the results.
-![***Figure 01.***](https://myoctocat.com/assets/images/base-octocat.svg)
-
+![/IntroToProg-Python-Mod07/docs/screenshots/Figure 01.png](https://github.com/saglarao/IntroToProg-Python-Mod07/blob/main/docs/screenshots/Figure%2001.png?raw=true)
 ***Figure 01. Custom Message for ValueError***
     
 Then I want to see what the user will get, if they enter price as ‘0’, Figure 02 shows the result.
 
-![***Figure 02.***](https://myoctocat.com/assets/images/base-octocat.svg)
-
+![***Figure 02.***](https://raw.githubusercontent.com/saglarao/IntroToProg-Python-Mod07/main/docs/screenshots/Figure%2002.png)
 ***Figure 02. PriceError***
 
 Figure 02 shows, that when the value is ‘0’ (it will work same way, if I enter a negative number), the user gets print message (“Invalid price value”) from Exception class, then it shows my custom message, doc string and its type from derived class PriceError that I defined. 
@@ -121,14 +119,12 @@ elif strMenuChoice == '3':  # Saving data to binary file/ pickling
     print(strStatus)
  ```
  Once I added couple grocery items to the list, I choose option 3 to save it into file and receive a message, that data was saved. 
- ![***Figure 03***]
- 
+ ![***Figure 03***](https://raw.githubusercontent.com/saglarao/IntroToProg-Python-Mod07/main/docs/screenshots/Figure%2003.png)
  ***Figure 03. Saving data***
  
  New file *“GroceryList.dat”* appears in the project folder. When I open it, it hold binary type data, which I can’t really read.
  
- ![***Figure 04***]
- 
+ ![***Figure 04***](https://raw.githubusercontent.com/saglarao/IntroToProg-Python-Mod07/main/docs/screenshots/Figure%2004.png) 
  ***Figure 04. GroceryList.dat with binary data.***
  
  ## Reading Binary Data From File
@@ -164,13 +160,13 @@ elif strMenuChoice == '4':     # Unpickling file in load_file
         print('Python error type:', type(e))
  ```
   Since I already had file saved, I tested the unpicking the data first to make sure, it loads and displays correctly. Figure 05 shows the results. 
-  ![***Figure 05***]
+  ![***Figure 05***](https://github.com/saglarao/IntroToProg-Python-Mod07/blob/main/docs/screenshots/Figure%2005.png?raw=true)
   
   ***Figure 05. Loading data from file.***
   
   Next I deleted the file to see an error message. Figure 06 shows what program does, if the file doesn’t exist and I try to choose option 4 of the menu.
   
-  ![***Figure 06***]
+  ![***Figure 06***](https://raw.githubusercontent.com/saglarao/IntroToProg-Python-Mod07/main/docs/screenshots/Figure%2006.png)
   
   ***Figure 06. FileNotFoundError***
   
