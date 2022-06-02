@@ -169,8 +169,22 @@ elif strMenuChoice == '4':     # Unpickling file in load_file
   
   ![***Figure 06***](https://raw.githubusercontent.com/saglarao/IntroToProg-Python-Mod07/main/docs/screenshots/Figure%2006.png)
   
-  ***Figure 06. FileNotFoundError***
+  ***Figure 06. FileNotFoundError.***
+  
+  ## Running the script in Command shell
+  When my script was ready and ran smoothly in PyCharm, I tested it in Terminal as well by calling python3 command and copying the script’s pathway. I started with adding items to the list and purposefully entering second item’s price as 0. Figure 07 shows the result.
+  ![***Figure 07***](https://raw.githubusercontent.com/saglarao/IntroToProg-Python-Mod07/main/docs/screenshots/Figure%2007.png)
+  
+  ***Figure 07. Adding items to the list in Terminal.***
+  
+  Next, I saved the list to a file by choosing option 3, once saved, the program was able to read it and then display it back to me. Only one item is shown, as the second item had wrong price and it wasn’t added to the list. Figure 08 is the screenshot of how it looks.
+  ![***Figure 08***](https://raw.githubusercontent.com/saglarao/IntroToProg-Python-Mod07/main/docs/screenshots/Figure%2008.png)
+  
+  ***Figure 08. Saving and reading binary file from Terminal.***
+  
+  The program works the same way, as it did in PyCharm, with the exception of location of the file, that if needed could be specify in the script.
   
   ## Summary
   The script lets the user to add items to the grocery list, then saves it as a binary data into a file, that can be later extracted back to display by using pickle module. While collecting user input, I added custom and regular error handling to catch incorrect value, display more user friendly message, as well as have the program to continue to run instead of shutting down.
+  The code could be improved by adding more menu options like removing item from the list, having a nicer exit or adding another error handling for when the user uses numbers instead of words. However, the focus was on pickling and error handling, and, hopefully, I covered that in this assignment.
  
